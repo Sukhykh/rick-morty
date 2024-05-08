@@ -6,16 +6,17 @@ import styles from './EpisodeItem.module.scss'
 
 type EpisodeItemProps = {
 	data: Episode
+	openModal: (data: Episode) => void
 }
 
-const EpisodeItem: React.FC<EpisodeItemProps> = ({ data }) => {
+const EpisodeItem: React.FC<EpisodeItemProps> = ({ data, openModal }) => {
 	const { name, air_date, episode } = data
 
 	const trimmedName: string =
 		name.length > 24 ? name.slice(0, 24) + '...' : name
 
 	return (
-		<div className={styles.episode}>
+		<div className={styles.episode} onClick={() => openModal(data)}>
 			<div className={styles.episode__imgWrapper}>
 				<picture>
 					<source srcSet={webp} type='image/webp' />

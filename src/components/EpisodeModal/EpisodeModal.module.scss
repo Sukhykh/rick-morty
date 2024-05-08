@@ -1,0 +1,93 @@
+@import '../../assets/styles/module.scss';
+
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	
+
+	&__wrapper {
+		width: 50%;
+		max-height: 80%;
+		padding: 3rem;
+		display: flex;
+		gap: 2rem;
+		background-color: $text;
+		border-radius: 2rem;
+		overflow-y: scroll;
+
+		@media(width <= 1000px) {
+			width: 80%;
+		}
+	}
+
+	&__imgWrapper {
+		width: 60%;
+
+		@media(width <= 600px) {
+			display: none;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+
+	&__infoWrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	&__title {
+		margin-block: 1rem;
+		font-size: 1.5rem;
+		line-height: 110%;
+		color: $secondaryAccent;
+		text-transform: uppercase;
+	}
+
+	&__info {
+		font-size: 1.2rem;
+		line-height: 100%;
+		color: $hover;
+		text-transform: uppercase;
+	}
+
+	&__characterList {
+		list-style: circle;
+		list-style-position: inside;
+	}
+
+	&__character {
+		font-size: 1.1rem;
+		line-height: 100%;
+	}
+
+	&__button {
+		width: fit-content;
+		margin-block-start: 2rem;
+		padding: 0.5rem 2rem;
+		border: 0.1rem solid $hover;
+		border-radius: 0.5rem;
+		background-color: transparent;
+		cursor: pointer;
+
+		transition: all 0.3s linear;
+
+		&:hover {
+			background-color: $primaryAccent;
+		}
+
+		:active {
+			opacity: 0.5;
+		}
+	}
+}

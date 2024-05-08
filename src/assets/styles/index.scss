@@ -10,6 +10,10 @@ html {
 
 body {
 	background-color: $background;
+
+	&:has(#modal-wrapper) {
+		overflow: hidden;
+	}
 }
 
 ::-webkit-scrollbar {
