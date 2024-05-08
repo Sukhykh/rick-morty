@@ -1,0 +1,175 @@
+@import '../../assets/styles/module.scss';
+
+.preloader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $hover;
+	opacity: 0.9;
+	z-index: 3;
+
+	&__spin {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+
+			&_one {
+					--translateX: 0;
+					border-top: 0.3rem solid $primaryAccent;
+					animation: spin 5s linear infinite;
+
+					@media (orientation: landscape) {
+							width: 70vh;
+							height: 70vh;
+					}
+
+					@media (orientation: portrait) {
+							width: 70vw;
+							height: 70vw;
+					}
+			}
+
+			&_two {
+					--translateX: 0;
+					border-top: 0.3rem solid $text;
+					animation: spin-reverse 3s linear infinite;
+
+					@media (orientation: landscape) {
+							width: 68vh;
+							height: 68vh;
+					}
+
+					@media (orientation: portrait) {
+							width: 68vw;
+							height: 68vw;
+					}
+			}
+
+			&_three {
+					--translateX: 0;
+					border-top: 0.3rem solid $secondaryAccent;
+					animation: spin 1s linear infinite;
+
+					@media (orientation: landscape) {
+							width: 66vh;
+							height: 66vh;
+					}
+
+					@media (orientation: portrait) {
+							width: 66vw;
+							height: 66vw;
+					}
+			}
+
+			&_four {
+					--translateX: -20%;
+					border-top: 0.3rem solid $primaryAccent;
+					transform: translateX(var(--translateX));
+					animation: spin-reverse 3s linear infinite;
+
+					@media (orientation: landscape) {
+							width: 45vh;
+							height: 45vh;
+					}
+
+					@media (orientation: portrait) {
+							width: 45vw;
+							height: 45vw;
+					}
+			}
+
+			&_five {
+					--translateX: -20%;
+					border-top: 0.3rem solid $text;
+					transform: translateX(var(--translateX));
+					animation: spin 2s linear infinite;
+
+					@media (orientation: landscape) {
+							width: 43vh;
+							height: 43vh;
+					}
+
+					@media (orientation: portrait) {
+							width: 43vw;
+							height: 43vw;
+					}
+			}
+
+			&_six {
+					--translateX: -20%;
+					border-top: 0.3rem solid $secondaryAccent;
+					transform: translateX(var(--translateX));
+					animation: spin-reverse 1s linear infinite;
+
+					@media (orientation: landscape) {
+							width: 41vh;
+							height: 41vh;
+					}
+
+					@media (orientation: portrait) {
+							width: 41vw;
+							height: 41vw;
+					}
+			}
+
+			&_seven {
+					--translateX: 0;
+					border-top: 0.3rem solid $primaryAccent;
+					animation: spin 3s linear infinite;
+
+					@media (orientation: landscape) {
+							width: 23vh;
+							height: 23vh;
+					}
+
+					@media (orientation: portrait) {
+							width: 23vw;
+							height: 23vw;
+					}
+			}
+
+			&_eight {
+					--translateX: 0;
+					border-top: 0.3rem solid $text;
+					animation: spin 2s linear infinite;
+
+					@media (orientation: landscape) {
+							width: 21vh;
+							height: 21vh;
+					}
+
+					@media (orientation: portrait) {
+							width: 21vw;
+							height: 21vw;
+					}
+			}
+
+			&_nine {
+					--translateX: 0;
+					border-top: 0.3rem solid $secondaryAccent;
+					animation: spin 1s linear infinite;
+
+					@media (orientation: landscape) {
+							width: 19vh;
+							height: 19vh;
+					}
+
+					@media (orientation: portrait) {
+							width: 19vw;
+							height: 19vw;
+					}
+			}
+	}
+
+	&__text {
+		font-size: 2rem;
+		color: $text;
+	}
+}

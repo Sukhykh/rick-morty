@@ -1,0 +1,13 @@
+@function dynamic1400($n) {
+	@return calc($n / 1400px) * 100 * 1vw;
+}
+
+@mixin container {
+	max-width: dynamic1400(1280px);
+	width: 100%;
+	margin-inline: auto;
+
+	@media (width >= 1400px) {
+		max-width: 1280px;
+	}
+}

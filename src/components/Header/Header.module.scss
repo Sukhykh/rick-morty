@@ -1,0 +1,21 @@
+@import '../../assets/styles/module.scss';
+
+.header {
+	background-color: $backgroundHeader;
+	padding: 1rem 0;
+
+	&__container {
+		@include container
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 15rem;
+
+		@media(width <= 800px) {
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+}

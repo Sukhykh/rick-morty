@@ -1,0 +1,17 @@
+@keyframes spin {
+	0% { 
+			transform: translateX(var(--translateX)) rotateZ(0deg);
+	}
+	100% {
+			transform: translateX(var(--translateX)) rotateZ(360deg);
+	}
+}
+
+@keyframes spin-reverse {
+	0% { 
+			transform: translateX(var(--translateX)) rotate(0deg);
+	}
+	100% {
+			transform: translateX(var(--translateX)) rotate(-360deg);
+	}
+}

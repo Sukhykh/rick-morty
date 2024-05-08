@@ -1,0 +1,36 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6,
+p, a, img, form, label,
+input, select, ul, li,
+article, aside, footer,
+header, main, menu, nav,
+section, button, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    outline: none;
+    background: transparent;
+}

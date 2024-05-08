@@ -10,7 +10,11 @@
       "@components/*": ["./components/*"],
       "@pages/*": ["./pages/*"],
       "@enums/*": ["./shared/enums/*"],
+      "@types/*": ["./shared/types/*"],
       "@router/*": ["./router/*"],
+      "@assets/*": ["./assets/*"],
+      "@utilities/*": ["./utilities/*"],
+      "@services/*": ["./services/*"],
     },
 
     /* Bundler mode */
