@@ -7,7 +7,6 @@ const Episodes = () => {
 			<Title name='Episodes'/>
 			<EpisodeList />
 		</>
-			
 	)
 }
 

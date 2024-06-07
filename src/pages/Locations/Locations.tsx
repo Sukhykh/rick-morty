@@ -1,15 +1,12 @@
-import React from 'react'
-
-/*
-Locations page - it should include the list of all locations and
-this one should use GraphQL. The page should be identical to
-the Episodes page, you can use placeholder images here
-too.
-*/
+import { LocationsList } from '@components/LocationsList/LocationsList'
+import Title from '@components/Title/Title'
 
 const Locations = () => {
 	return (
-		<div>Locations</div>
+		<>
+		<Title name='Locations'/>
+		<LocationsList />
+	</>
 	)
 }
 

@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import styles from './Search.module.scss'
-import { debounce } from '@utilities/debounce'
 
 type SearchProps = {
 	name: string
