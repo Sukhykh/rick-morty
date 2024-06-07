@@ -1,6 +1,6 @@
 @import '../../assets/styles/module.scss';
 
-.episode {
+.character {
 	border: 0.2rem solid $hover;
 	border-radius: 0.5rem;
 	overflow: hidden;
@@ -12,9 +12,10 @@
 		scale: 1.05;
 		box-shadow: 0 0 2rem $hover;
 	}
-
+	
 	&__imgWrapper {
 		width: 21rem;
+		height: 21rem;
 	}
 
 	&__img {
@@ -33,11 +34,13 @@
 		font-size: 1.5rem;
 		line-height: 120%;
 		color: $secondaryAccent;
+		text-transform: capitalize;
 	}
 
 	&__info {
 		font-size: 1.2rem;
 		line-height: 120%;
 		color: $hover;
+		text-transform: capitalize;
 	}
 }

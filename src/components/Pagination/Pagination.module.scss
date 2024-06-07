@@ -1,13 +1,15 @@
 @import '../../assets/styles/module.scss';
 
-.pagination  {
+.pagination {
 	display: flex;
 	justify-content: center;
 	gap: 2rem;
+	flex-wrap: wrap;
 
-	&__item{
+	&__item {
 		cursor: pointer;
 		display: flex;
+		align-items: flex-end;
 		padding: 1rem;
 		border-top: 0.3rem solid transparent;
 		border-bottom: 0.3rem solid transparent;
@@ -31,5 +33,43 @@
 			border-top: 0.3rem solid $secondaryAccent;
 			border-bottom: 0.3rem solid $secondaryAccent;
 		}
+
+		&_ellipsis {
+			cursor: auto;
+
+			&:hover {
+				border-top: 0.3rem solid transparent;
+				border-bottom: 0.3rem solid transparent;
+			}
+
+			&:active {
+				opacity: 1;
+			}
+		}
+
+		&_disabled {
+			cursor: auto;
+			opacity: 0.5;
+
+			&:hover {
+				border-top: 0.3rem solid transparent;
+				border-bottom: 0.3rem solid transparent;
+			}
+
+			&:active {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	&__arrowWrapper,
+	&__ellipsisWrapper {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	&__arrow,
+	&__ellipsis {
+		fill: $text;
 	}
 }

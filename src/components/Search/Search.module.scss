@@ -1,0 +1,26 @@
+@import '../../assets/styles/module.scss';
+
+.search {
+
+	&__input {
+		width: 100%;
+		padding: 1.5rem;
+		border: 2px solid $text;
+		border-radius: 1rem;
+
+		font-size: 2rem;
+		line-height: 100%;
+		color: $text;
+
+		transition: all 0.3s linear;
+
+		&_active {
+			color: $primaryAccent;
+			border-color: $secondaryAccent;
+		}
+	}
+
+
+
+
+}

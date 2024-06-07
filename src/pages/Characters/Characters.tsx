@@ -1,5 +1,6 @@
-import Loader from '@components/Loader/Loader'
-import React from 'react'
+import CharactersList from '@components/CharactersList/CharactersList'
+import Title from '@components/Title/Title'
+
 
 /* 
 Characters page - it should include the list of all characters.
@@ -14,9 +15,10 @@ include the links here (apart from image).
 
 const Characters = () => {
 	return (
-		
-		<div>Characters</div>
-		// <Loader />
+		<>
+			<Title name='Characters' />
+			<CharactersList />
+		</>
 	)
 }
 

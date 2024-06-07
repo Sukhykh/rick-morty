@@ -10,7 +10,7 @@ const Footer = () => {
 						<div className={styles.footer__blockPart}>
 							<h2 className={styles.footer__title}>Personal info</h2>
 							<p className={styles.footer__text}>Kostiantyn Sukhykh</p>
-							<p className={styles.footer__text}>konstantin.suhih@gmail.com</p>
+							<p className={styles.footer__text}>konstantin.suhih&#64;gmail.com</p>
 							<p className={styles.footer__text}>067 551 47 28</p>
 						</div>
 						<div className={styles.footer__blockPart}>
@@ -20,7 +20,7 @@ const Footer = () => {
 							<p className={styles.footer__text}>React-router-dom</p>
 							<p className={styles.footer__text}>Axios</p>
 							<p className={styles.footer__text}>Sass</p>
-							<p className={styles.footer__text}>vite</p>
+							<p className={styles.footer__text}>Vite</p>
 						</div>
 					</div>
 					<div className={styles.footer__block}>

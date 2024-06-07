@@ -10,7 +10,7 @@
       "@components/*": ["./components/*"],
       "@pages/*": ["./pages/*"],
       "@enums/*": ["./shared/enums/*"],
-      "@types/*": ["./shared/types/*"],
+      "@type/*": ["./shared/type/*"],
       "@router/*": ["./router/*"],
       "@assets/*": ["./assets/*"],
       "@utilities/*": ["./utilities/*"],

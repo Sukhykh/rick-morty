@@ -1,5 +1,5 @@
-import { Episode } from '@types/episode'
 import { useEffect, useState } from 'react'
+import { Episode } from 'shared/type/episode'
 
 import jpeg from '@assets/images/episodes/episodes.jpg'
 import webp from '@assets/images/episodes/episodes.webp'
@@ -74,8 +74,8 @@ const EpisodeModal: React.FC<EpisodeModalProps> = ({ data, closeModal }) => {
 							</picture>
 						</div>
 						<div className={styles.modal__infoWrapper}>
-						<p className={styles.modal__info}>{data.episode}</p>
-						<p className={styles.modal__info}>{data.air_date}</p>
+							<p className={styles.modal__info}>{data.episode}</p>
+							<p className={styles.modal__info}>{data.air_date}</p>
 							<p className={styles.modal__title}>{data.name}</p>
 							<p className={styles.modal__info}>Characters:</p>
 							<ul className={styles.modal__characterList}>
@@ -86,7 +86,7 @@ const EpisodeModal: React.FC<EpisodeModalProps> = ({ data, closeModal }) => {
 								))}
 							</ul>
 							<div className={styles.modal__button} onClick={toggleIsShort}>
-								{isShort ? 'Show more' : "Show less"}
+								{isShort ? 'Show more' : 'Show less'}
 							</div>
 						</div>
 					</div>

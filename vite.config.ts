@@ -10,7 +10,7 @@ export default defineConfig({
       '@components': path.resolve(__dirname, './src/components'),
       '@pages': path.resolve(__dirname, './src/pages'),
       '@enums': path.resolve(__dirname, './src/shared/enums'),
-      '@types': path.resolve(__dirname, './src/shared/types'),
+      '@type': path.resolve(__dirname, './src/shared/type'),
       '@router': path.resolve(__dirname, './src/router'),
       '@assets': path.resolve(__dirname, './src/assets'),
       '@utilities': path.resolve(__dirname, './src/utilities'),

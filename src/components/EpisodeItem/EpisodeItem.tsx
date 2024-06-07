@@ -1,7 +1,6 @@
 import jpeg from '@assets/images/episodes/episodes.jpg'
 import webp from '@assets/images/episodes/episodes.webp'
-import { Episode } from '@types/index.ts'
-import React from 'react'
+import { Episode } from 'shared/type'
 import styles from './EpisodeItem.module.scss'
 
 type EpisodeItemProps = {
