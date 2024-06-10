@@ -10,7 +10,6 @@ const Navigation = () => {
 
 	const toggleActiveLink = (name: string) => {
 		setActiveLink(name)
-		console.log(activeLink)
 	}
 
   useEffect(() => {

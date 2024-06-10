@@ -1,6 +1,8 @@
+import Title from '@components/Title/Title'
+
 const NotFound = () => {
 	return (
-		<div>NotFound</div>
+		<Title name='Error 404: Page not Found!' />
 	)
 }
 
