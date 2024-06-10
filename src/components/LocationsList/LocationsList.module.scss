@@ -1,0 +1,18 @@
+@import '../../assets/styles/module.scss';
+
+.locationList {
+	display: flex;
+	flex-direction: column;
+	margin-block-start: 2rem;
+	gap: 2rem;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 3rem;
+		padding: 3rem 2rem;
+		border-radius: 2rem;
+		background-color: $text;
+	}
+}
